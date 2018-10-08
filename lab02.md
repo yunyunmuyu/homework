@@ -48,7 +48,7 @@
  在右下方框内点击player的图标，再到左方框内找到behaviors，点击。
 再点击加号的标志，将会出现如图所示的方框：
 
-！[](https://github.com/yunyunmuyu/homeworkjw/blob/gh-pages/images/2345%E6%88%AA%E5%9B%BE20181006175538.png)
+![](https://github.com/yunyunmuyu/homeworkjw/blob/gh-pages/images/2345%E6%88%AA%E5%9B%BE20181006175538.png)
 
 选择8direction，boundTolayout,ScrollTo三个动作。
 相应的给monster设置bullet movement动作，并在左方框把速度设置为500；
@@ -61,22 +61,22 @@ bullet增加bullet movement和destroy outside layout 动作；
 点击Event sheet，再双击空白页面，将会出现方框
 
 
-！[](https://github.com/yunyunmuyu/homeworkjw/blob/gh-pages/images/2345%E6%88%AA%E5%9B%BE20181006182132.png)
+![](https://github.com/yunyunmuyu/homeworkjw/blob/gh-pages/images/2345%E6%88%AA%E5%9B%BE20181006182132.png)
  点击system>>every tick>>add action>>player>>set angle toward position>>
 将会出现一个新的方框，点击mouse，相应的选择X，Y；如图
-！[](https://github.com/yunyunmuyu/homeworkjw/blob/gh-pages/images/2345%E6%88%AA%E5%9B%BE20181006184800.png).
+![](https://github.com/yunyunmuyu/homeworkjw/blob/gh-pages/images/2345%E6%88%AA%E5%9B%BE20181006184800.png).
  这样我们的第一个事件就设置好了
 
  事件二：让player射击
  右键增加事件>>mouse>>On Left button Clicked>>add action>>player>>spawn another object将出现如图的界面
 
- ！[](https://github.com/yunyunmuyu/homeworkjw/blob/gh-pages/images/2345%E6%88%AA%E5%9B%BE20181006211631.png)
+ ![](https://github.com/yunyunmuyu/homeworkjw/blob/gh-pages/images/2345%E6%88%AA%E5%9B%BE20181006211631.png)
 
  选择bullet项目 ，设置layer1，image point 1；
  下面，我们要设置子弹的发射位置，右击player项目，选择Edit animations，在
  打开的方框里选择准星的图标
 
- ！[](https://github.com/yunyunmuyu/homeworkjw/blob/gh-pages/images/2345%E6%88%AA%E5%9B%BE20181006211841.png)
+ ![](https://github.com/yunyunmuyu/homeworkjw/blob/gh-pages/images/2345%E6%88%AA%E5%9B%BE20181006211841.png)
   
 然后点击player的发射位置保存。
   
@@ -89,7 +89,7 @@ Action: Bullet -> Destroy
 
 这时，如果我们运行游戏，会发现爆炸图片的图标背景为黑色，我们要把黑背景去掉。点击explosion图标，在左方框找到effect的目录。
 
-！[](https://github.com/yunyunmuyu/homeworkjw/blob/gh-pages/images/2345%E6%88%AA%E5%9B%BE20181006212840.png)
+![](https://github.com/yunyunmuyu/homeworkjw/blob/gh-pages/images/2345%E6%88%AA%E5%9B%BE20181006212840.png)
 
 更改Blend mode 为Addictive。
 
@@ -104,7 +104,7 @@ system>>on start of layout >>monnster>>set angle to random(360) degrees。
 点击monster，在左方框点击instance variable,点击增加，
 name：health   type：number    initial value:5
 
-！[](https://github.com/yunyunmuyu/homeworkjw/blob/gh-pages/images/2345%E6%88%AA%E5%9B%BE20181006221641.png)
+![](https://github.com/yunyunmuyu/homeworkjw/blob/gh-pages/images/2345%E6%88%AA%E5%9B%BE20181006221641.png)
   
 
 然后在Bullet - on collision with Monster，的后面将monster destroy 的动作更改：右键点击该动作，选择replace action，选择Monster -> Subtract from (in the Instance variables category) -> Instance variable "health"
